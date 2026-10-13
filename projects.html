@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects – Adit.dev</title>
+    <meta
+      name="description"
+      content="Daftar project Aditiya Mursalin: media pembelajaran berbasis Python dan web katalog e-commerce."
+    />
+    <meta name="theme-color" content="#0B0F1A" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="main page.html" aria-label="adit.dev, beranda"
+          >adit<span>.dev</span></a
+        >
+        <nav class="nav__links" id="menu" aria-label="Navigasi utama">
+          <a href="main page.html" data-page="index.html">Home</a>
+          <a href="projects.html" data-page="projects.html">Projects</a>
+          <a href="about.html" data-page="about.html">About</a>
+          <a href="contact.html" data-page="contact.html">Contact</a>
+        </nav>
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section page-head" aria-labelledby="page-title">
+        <div class="container">
+          <h2 id="page-title">Projects</h2>
+          <div class="chips" role="group" aria-label="Filter project">
+            <button
+              class="chip chip--btn is-active"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Semua
+            </button>
+            <button
+              class="chip chip--btn"
+              type="button"
+              data-filter="python"
+              aria-pressed="false"
+            >
+              Python
+            </button>
+            <button
+              class="chip chip--btn"
+              type="button"
+              data-filter="web"
+              aria-pressed="false"
+            >
+              Web
+            </button>
+          </div>
+          <p
+            class="sr-only"
+            id="filter-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </div>
+      </section>
+
+      <section class="section page-body" aria-label="Daftar project">
+        <div class="container">
+          <div class="grid" id="project-grid">
+            <a
+              class="card"
+              href="project-detail.html?id=media"
+              data-category="python"
+            >
+              <div class="card__thumb" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Media Pembelajaran Sekolah</h3>
+                <p>
+                  Media pembelajaran interaktif untuk sekolah berbasis Python
+                </p>
+                <span class="chip">Python</span>
+              </div>
+            </a>
+            <a
+              class="card"
+              href="project-detail.html?id=katalog"
+              data-category="web"
+            >
+              <div class="card__thumb" aria-hidden="true"></div>
+              <div class="card__body">
+                <h3>Web Katalog E-Commerce</h3>
+                <p>Katalog produk online yang responsif dan mudah dijelajahi</p>
+                <span class="chip">HTML · CSS · Bootstrap</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year">2026</span> Aditiya Mursalin</span>
+        <span class="footer__links">
+          <a
+            href="https://github.com/ballknower243"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          ·
+          <a href="https://www.linkedin.com/in/muhammad-aditiya-a62800443" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          ·
+          <a href="mailto:aditiyamuhammad197@email.com">Email</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="projects.js"></script>
+  </body>
+</html>
