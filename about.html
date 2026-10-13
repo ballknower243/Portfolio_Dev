@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About – Adit.dev</title>
+    <meta
+      name="description"
+      content="Tentang Aditiya Mursalin, developer Python dan web asal Banjarmasin."
+    />
+    <meta name="theme-color" content="#0B0F1A" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="main page.html" aria-label="adit.dev, beranda"
+          >adit<span>.dev</span></a
+        >
+        <nav class="nav__links" id="menu" aria-label="Navigasi utama">
+          <a href="main page.html" data-page="index.html">Home</a>
+          <a href="projects.html" data-page="projects.html">Projects</a>
+          <a href="about.html" data-page="about.html">About</a>
+          <a href="contact.html" data-page="contact.html">Contact</a>
+        </nav>
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section about-hero" aria-labelledby="about-title">
+        <div class="container about-hero__inner">
+          <div class="avatar">
+            <img src="diri sendiri.jpeg" alt="Foto Aditiya Mursalin" />
+          </div>
+          <div class="about-hero__text">
+            <span class="badge">Python &amp; Web Developer</span>
+            <h1 id="about-title" class="page-title">Tentang saya</h1>
+            <p>
+              Halo, saya Aditiya Mursalin, developer asal Banjarmasin yang gemar
+              mengubah masalah rumit menjadi produk web yang sederhana dan
+              nyaman dipakai.
+            </p>
+            <p>
+              Saya memulai dari frontend, lalu berkembang ke backend dan cloud.
+              Sekarang saya mengerjakan aplikasi end-to-end, dari desain
+              antarmuka di Figma sampai deployment.
+            </p>
+            <div class="actions">
+              <a class="btn btn--primary" href="contact.html">Hubungi Saya</a>
+              <a class="btn btn--ghost" href="projects.html">Lihat Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats-wrap" aria-label="Ringkasan">
+        <div class="container">
+          <dl class="stats">
+            <div>
+              <dd>2</dd>
+              <dt>Project utama</dt>
+            </div>
+            <div>
+              <dd>4</dd>
+              <dt>Teknologi inti</dt>
+            </div>
+            <div>
+              <dd>Python</dd>
+              <dt>Bahasa utama</dt>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Keahlian</h2>
+          <div class="grid grid--3">
+            <div class="info-card">
+              <h3>Frontend</h3>
+              <p>HTML, CSS, Bootstrap</p>
+            </div>
+            <div class="info-card">
+              <h3>Pemrograman</h3>
+              <p>Python</p>
+            </div>
+            <div class="info-card">
+              <h3>Tools</h3>
+              <p>Git, Figma</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="work-title">
+        <div class="container">
+          <h2 id="work-title">Cara kerja saya</h2>
+          <div class="grid grid--3">
+            <div class="info-card">
+              <h3>Mulai dari pengguna</h3>
+              <p>Riset singkat dan prototype sebelum menulis kode.</p>
+            </div>
+            <div class="info-card">
+              <h3>Bersih dan terukur</h3>
+              <p>Kode terstruktur, diuji, dan dipantau performanya.</p>
+            </div>
+            <div class="info-card">
+              <h3>Komunikatif</h3>
+              <p>Update rutin dan keputusan yang transparan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="journey-title">
+        <div class="container">
+          <h2 id="journey-title">Perjalanan</h2>
+          <ol class="timeline">
+            <li>
+              <time>2025 – sekarang</time><span>S1 Pendidikan Komputer</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year">2026</span> Aditiya Mursalin</span>
+        <span class="footer__links">
+          <a
+            href="https://github.com/ballknower243"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          ·
+          <a href="https://www.linkedin.com/in/muhammad-aditiya-a62800443" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          ·
+          <a href="mailto:aditiyamuhammad197@email.com">Email</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
