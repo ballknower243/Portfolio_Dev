@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Media Pembelajaran Sekolah – Adit.dev</title>
+    <meta name="description" content="Detail project Aditiya Mursalin." />
+    <meta name="theme-color" content="#0B0F1A" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-nav="projects.html">
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="main page.html" aria-label="adit.dev, beranda"
+          >adit<span>.dev</span></a
+        >
+        <nav class="nav__links" id="menu" aria-label="Navigasi utama">
+          <a href="main page.html" data-page="index.html">Home</a>
+          <a href="projects.html" data-page="projects.html">Projects</a>
+          <a href="about.html" data-page="about.html">About</a>
+          <a href="contact.html" data-page="contact.html">Contact</a>
+        </nav>
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <article class="section detail" id="detail">
+        <div class="container">
+          <a class="back" href="projects.html">← Kembali</a>
+          <div class="cover" aria-hidden="true"></div>
+          <h1 class="detail__title" id="d-title">Media Pembelajaran Sekolah</h1>
+          <p class="detail__desc" id="d-desc">
+            Media pembelajaran sekolah berbasis Python yang dibuat untuk
+            membantu proses belajar siswa.
+          </p>
+
+          <dl class="meta" id="d-meta">
+            <div>
+              <dt>Peran</dt>
+              <dd>Developer</dd>
+            </div>
+            <div>
+              <dt>Kategori</dt>
+              <dd>Media pembelajaran</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Python</dd>
+            </div>
+          </dl>
+
+          <div class="actions">
+            <a class="btn btn--primary" id="d-demo" href="#">Lihat demo</a>
+            <a class="btn btn--ghost" id="d-source" href="https://github.com/ballknower243/media_pembelajaran_berbasis_python.git" target="_blank" rel="noopener noreferrer">Source code</a>
+          </div>
+
+          <pre
+            class="code"
+            id="d-code"
+            aria-label="Cuplikan kode"
+          ><code><span class="code__key">def jalankan_kuis(mapel):</span>
+    print(f"\n=== KUIS {mapel.upper()} ===")
+    
+    soal_terpilih = random.sample(bank_soal[mapel], 10)
+    skor = 0
+    hasil_jawaban = []
+
+    for nomor, soal in enumerate(soal_terpilih, start=1):
+        print(f"\n{nomor}. {soal[0]}")
+        for opsi in soal[1]:
+            print(opsi)
+
+        jawab = input("Jawabanmu: ").strip().upper()
+
+
+        while jawab not in ["A", "B", "C", "D"]:
+            print("Masukkan A, B, C, atau D")
+            jawab = input("Jawabanmu: ").strip().upper()
+
+        benar = jawab == soal[2]
+        if benar:
+            skor += 10
+
+        hasil_jawaban.append({
+            "pertanyaan": soal[0],
+            "jawaban_user": jawab,
+            "jawaban_benar": soal[2],
+            "pembahasan": soal[3],
+            "status": benar
+        })
+
+    print("\n=== HASIL KUIS ===")
+    print(f"\nNilai akhir kamu: {skor}")
+
+    
+    if skor == 100:
+        kategori = "Sangat Baik"
+    elif skor >= 80:
+        kategori = "Baik"
+    elif skor >= 60:
+        kategori = "Cukup"
+    else:
+        kategori = "Perlu Latihan Lagi"
+
+    print(f"Kategori: {kategori}")
+
+
+    rekap_nilai.append({
+        "Jenis": "Kuis",
+        "Mapel": mapel,
+        "Nilai": skor
+    })
+
+    print("\n=== PEMBAHASAN JAWABAN ===")
+    for i, data in enumerate(hasil_jawaban, start=1):
+        print(f"\n{i}. {data['pertanyaan']}")
+        print(f"Jawaban kamu   : {data['jawaban_user']}")
+        print(f"Jawaban benar  : {data['jawaban_benar']}")
+        print("Status         :", "Benar" if data["status"] else "Salah")
+        print(f"Pembahasan     : {data['pembahasan']}")</code></pre>
+        </div>
+      </article>
+
+      <section class="section notfound" id="notfound" hidden>
+        <div class="container">
+          <h1 class="detail__title">Project tidak ditemukan</h1>
+          <p class="detail__desc">
+            Alamat project ini tidak sesuai dengan daftar project yang ada.
+            Pilih project dari halaman Projects.
+          </p>
+          <div class="actions">
+            <a class="btn btn--primary" href="projects.html"
+              >Buka halaman Projects</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year">2026</span> Aditiya Mursalin</span>
+        <span class="footer__links">
+          <a
+            href="https://github.com/ballknower243"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          ·
+          <a href="https://www.linkedin.com/in/muhammad-aditiya-a62800443" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          ·
+          <a href="mailto:aditiyamuhammad197@email.com">Email</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="detail.js"></script>
+  </body>
+</html>
