@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – Adit.dev</title>
+    <meta
+      name="description"
+      content="Hubungi Aditiya Mursalin untuk project, kolaborasi, atau sekadar berkenalan."
+    />
+    <meta name="theme-color" content="#0B0F1A" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Lewati ke konten</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="index.html" aria-label="adit.dev, beranda"
+          >adit<span>.dev</span></a
+        >
+        <nav class="nav__links" id="menu" aria-label="Navigasi utama">
+          <a href="main page.html" data-page="index.html">Home</a>
+          <a href="projects.html" data-page="projects.html">Projects</a>
+          <a href="about.html" data-page="about.html">About</a>
+          <a href="contact.html" data-page="contact.html">Contact</a>
+        </nav>
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Buka menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section contact" aria-labelledby="contact-title">
+        <div class="container">
+          <h1 id="contact-title" class="page-title contact__title">
+            Hubungi saya
+          </h1>
+          <p class="contact__intro">
+            Punya ide project, butuh bantuan teknis, atau sekadar ingin
+            berkenalan? Kirim pesan, saya biasanya membalas dalam 1 x 24 jam.
+          </p>
+
+          <div class="contact__layout">
+            <form class="form" id="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Nama</label>
+                <input
+                  class="input"
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Nama lengkap"
+                  autocomplete="name"
+                  required
+                  aria-describedby="name-error"
+                />
+                <p class="field__error" id="name-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  class="input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="nama@email.com"
+                  autocomplete="email"
+                  required
+                  aria-describedby="email-error"
+                />
+                <p class="field__error" id="email-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="message">Pesan</label>
+                <textarea
+                  class="input"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Ceritakan kebutuhanmu"
+                  required
+                  aria-describedby="message-error"
+                ></textarea>
+                <p class="field__error" id="message-error" hidden></p>
+              </div>
+              <button class="btn btn--primary form__submit" type="submit">
+                Kirim pesan
+              </button>
+              <p
+                class="form__status"
+                id="form-status"
+                role="status"
+                aria-live="polite"
+                hidden
+              ></p>
+            </form>
+
+            <ul class="contact__info" aria-label="Kontak langsung">
+              <li class="contact-card">
+                <span>Email</span
+                ><a href="mailto:aditiyamuhammad197@email.com"
+                  >aditiyamuhammad197@email.com</a
+                >
+              </li>
+              <li class="contact-card">
+                <span>GitHub</span
+                ><a
+                  href="https://github.com/ballknower243"
+                  target="_blank"
+                  rel="noopener"
+                  >github.com/ballknower243</a
+                >
+              </li>
+              <li class="contact-card">
+                <span>LinkedIn</span
+                ><a
+                  href="https://www.linkedin.com/in/muhammad-aditiya-a62800443"
+                  target="_blank"
+                  rel="noopener"
+                  >linkedin.com/in/Muhammad Aditiya</a
+                >
+              </li>
+              <li class="contact-card">
+                <span>Lokasi</span><b>Banjarmasin, Indonesia</b>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year">2026</span> Aditiya Mursalin</span>
+        <span class="footer__links">
+          <a
+            href="https://github.com/ballknower243"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          ·
+          <a href="https://linkedin.com/in/adit" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+          ·
+          <a href="mailto:aditiyamuhammad197@email.com">Email</a>
+        </span>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
